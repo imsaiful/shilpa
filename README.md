@@ -55,21 +55,16 @@ class Shilpa
 		{
 			System.out.println("Enter the element to search");
 			int x=in.nextInt();
-			boolean flag=true;
-			Iterator<Integer> itr=ts.iterator();  
-  			while(itr.hasNext()){  
-   			     if(itr.next()==x)
-   			     {
-   			     	System.out.println("Tree Contain the element");
-   			     	flag=false;
-   			     	break;
-   			     	
-   			     }
-   			 }
-   			 if(flag)
-   			 {
-   			 	System.out.println("There is no such element in TreeSet");
-   			 }
+			int y=ts.headSet(x).size()+1;
+			if(y<=ts.size())
+			{
+				System.out.println("Elements found at position "+y);
+			}
+			else
+			{
+				System.out.println("Elements not found");		
+			}
+			
 		}
 		else if(c==5)
 		{
@@ -87,6 +82,7 @@ class Shilpa
 	
 }
 }
+
 
 
 ```
