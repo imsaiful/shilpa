@@ -8,7 +8,7 @@ class Shilpa
 	{
 		Scanner in=new Scanner(System.in);
 		TreeSet<Integer> ts = new TreeSet<Integer>();
-		System.out.println("Enter the initial Capacity of Elements");
+		System.out.println("Enter the initial Capacity of TreeSet");
 		int n=in.nextInt();
 		for(int i=1;i<=n;i++)
 		{
